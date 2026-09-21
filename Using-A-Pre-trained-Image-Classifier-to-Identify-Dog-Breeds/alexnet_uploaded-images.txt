@@ -1,0 +1,76 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                     Dog_01.jpg  label:                        dog
+ 2 key:                     Dog_02.jpg  label:                        dog
+ 3 key:                     Cat_01.jpg  label:                        cat
+ 4 key:            Black_tshirt_01.jpg  label:               black tshirt
+
+     MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian
+
+                    Cat_01.jpg: 
+Real:                        cat   Classifier:                 tiger cat, cat
+
+ NOT A MATCH:
+
+           Black_tshirt_01.jpg: 
+Real:               black tshirt   Classifier:     jersey, t-shirt, tee shirt
+
+# Total Images 4 # Matches: 3 # NOT Matches: 1
+
+     MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Cat_01.jpg: 
+Real:                        cat   Classifier:                 tiger cat, cat  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+           Black_tshirt_01.jpg: 
+Real:               black tshirt   Classifier:     jersey, t-shirt, tee shirt  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 3 # NOT Matches: 1
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+CNN Model Architecture:  IN_ARG.ARCH
+
+*** Results Summary ***
+Number of Images:  4
+Number of Dog Images:  2
+Number of 'Not-a' Dog Images:  2
+
+*** Results Statistics ***
+PCT_CORRECT_DOGS:  100.0
+PCT_CORRECT_BREED:  100.0
+PCT_CORRECT_NOTDOGS:  100.0
+
+*** Incorrectly Classified Dogs ***
+
+*** Incorrectly Classified Dog Breeds ***
+
+** Total Elapsed Runtime: 0:0:1

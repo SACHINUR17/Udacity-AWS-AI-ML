@@ -1,0 +1,23 @@
+Questions regarding Uploaded Image Classification:
+
+1. Did the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed? If not, report the differences in the classifications.
+
+Answer: 
+Yes. The three model architectures (alexnet, resnet, vgg) classified the breed of dog in Dog_01.jpg to be the same breed. They all classified it as a German Shepherd, German Shepherd Dog, German Police Dog, or Alsatian.
+
+2. Did each of the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed of dog as that model architecture classified Dog_02.jpg? If not, report the differences in the classifications.
+
+Answer: 
+Yes, each of the three model architectures classified the breed of dog in Dog_01.jpg to be the same breed as they classified Dog_02.jpg. Both images were classified as German Shepherd, German Shepherd Dog, German Police Dog, or Alsatian.
+
+3. Did the three model architectures correctly classify Animal_Name_01.jpg and Object_Name_01.jpg to not be dogs? If not, report the misclassifications.
+
+Answer: 
+Yes. The three model architectures correctly classified Animal_Name_01.jpg and Object_Name_01.jpg to not be dogs. There were no misclassifications.
+
+4. Based upon your answers for questions 1. - 3. above, select the model architecture that you feel did the best at classifying the four uploaded images. Describe why you selected that model architecture as the best on uploaded image classification.
+
+Answer:
+The ResNet and AlexNet model architectures performed equally well in terms of classification accuracy, producing the same outputs for the given images. However, the AlexNet model architecture is more efficient in terms of runtime, taking only 1 second compared to the VGG model architecture, which took 8 seconds.
+
+Therefore, considering both accuracy and efficiency, the AlexNet model architecture is the best choice for classifying the four uploaded images. It achieves high accuracy while utilizing fewer time resources, making it an optimal option for image classification tasks
